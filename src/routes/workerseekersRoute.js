@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const workerController = require("../controller/workerController");
 // const upload = require('../Middlewares/upload');
 
-const router = express.Router(); 
+const router = express.Router();
 
 
 // router.post(
@@ -14,11 +14,19 @@ const router = express.Router();
 
 
 
-router.get("/getallworkers",   workerController.getAllWorkers) 
+router.get("/getallworkers", workerController.getAllWorkers)
 
-router.get("/getallcategories",   workerController.getAllCategories) 
+router.get("/getallcategories", workerController.getAllCategories)
 
-router.get("/getallcategoriesname",   workerController.getAllCategoriesName) 
+router.get("/getallcategoriesname", workerController.getAllCategoriesName)
+
+router.get("/getopratedworkers", workerController.getTopRatedWorkers)
+
+router.get("/getworker/:id", workerController.getWorkerById)
+
+router.get("/getworkersbycategory/:categoryId", workerController.getWorkersByCategory);
+
+router.get( "/home", workerController.getHomeData)
 
 
 // router.get("/getworkerbyid/:id", workerController.getWorkerById)
@@ -36,7 +44,7 @@ router.get("/getallcategoriesname",   workerController.getAllCategoriesName)
 
 // router.delete("/deleteworker/:id", workerController.deleteWorker);
 
-router.get("/",   (req, res) => {
+router.get("/", (req, res) => {
   res.json("Back End");
 })
 

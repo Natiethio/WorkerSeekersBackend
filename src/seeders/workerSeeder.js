@@ -311,7 +311,7 @@ const workers = [
         location: "CMC",
         // latitude: 9.0397,
         // longitude: 38.8420,
-        rating: 4,
+        rating: 0,
         wage: "135 ETB",
         image: "https://i.pravatar.cc/150?img=25",
         heroimage: "assets/images/electronicshero.jpg",
@@ -336,7 +336,7 @@ const workers = [
         location: "Sarbet",
         // latitude: 8.9994,
         // longitude: 38.7443,
-        rating: 5,
+        rating: 0,
         wage: "105 ETB",
         image: "https://i.pravatar.cc/150?img=14",
         heroimage: "assets/images/cleanning_Hero2.jpg",
@@ -365,7 +365,7 @@ const workers = [
         location: "Megenagna",
         // latitude: 9.0154,
         // longitude: 38.7998,
-        rating: 4,
+        rating: 0,
         wage: "130 ETB",
         image: "https://i.pravatar.cc/150?img=56",
         heroimage: "assets/images/plumberhero.jpg",
@@ -415,7 +415,7 @@ const workers = [
         location: "Sarbet",
         // latitude: 8.9994,
         // longitude: 38.7443,
-        rating: 5,
+        rating: 0,
         wage: "170 ETB",
         experience: "8 years",
         note: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
@@ -438,7 +438,7 @@ const workers = [
         location: "Megenagna",
         // latitude: 9.0154,
         // longitude: 38.7998,
-        rating: 4,
+        rating: 0,
         wage: "130 ETB",
         experience: "6 years",
         note: "",
@@ -459,7 +459,7 @@ const workers = [
         location: "Piassa",
         // latitude: 9.0385,
         // longitude: 38.7469,
-        rating: 4,
+        rating: 0,
         wage: "110 ETB",
         experience: "5 years",
 
@@ -486,7 +486,7 @@ const workers = [
         // latitude: 9.0397,
         // longitude: 38.8420,
 
-        rating: 4,
+        rating: 0,
         wage: "110 ETB",
         experience: "5 years",
 
@@ -513,7 +513,7 @@ const workers = [
         // latitude: 9.0095,
         // longitude: 38.7484,
 
-        rating: 5,
+        rating: 0,
         wage: "95 ETB",
         experience: "9 years",
 
@@ -538,7 +538,7 @@ const workers = [
         // latitude: 8.9992,
         // longitude: 38.8176,
 
-        rating: 5,
+        rating: 0,
         wage: "100 ETB",
         experience: "5 years",
 
@@ -565,7 +565,7 @@ const workers = [
         // latitude: 9.0095,
         // longitude: 38.7484,
 
-        rating: 5,
+        rating: 0,
         wage: "100 ETB",
         experience: "5 years",
 
@@ -592,7 +592,7 @@ const workers = [
         // latitude: 8.9992,
         // longitude: 38.8176,
 
-        rating: 5,
+        rating: 0,
         wage: "95 ETB",
         experience: "9 years",
 
