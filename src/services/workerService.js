@@ -643,9 +643,9 @@ class workerService {
 
           image: "$user.image",
 
-          icon : "$professionData.icon",
+          icon: "$professionData.icon",
 
-          iconwhite : "$professionData.iconwhite",
+          iconwhite: "$professionData.iconwhite",
 
           sex: "$user.sex",
 
@@ -660,16 +660,20 @@ class workerService {
   };
 
   async getHomeData() {
-  const [categories, topRatedWorkers] = await Promise.all([  // both promice can execute at the same time
-    this.getAllCategoriesName(),
-    this.getTopRatedWorkers(),
-  ]);
+    const [categories, topRatedWorkers] = await Promise.all([  // both promice can execute at the same time
+      this.getAllCategoriesName(),
+      this.getTopRatedWorkers(),
+    ]);
 
-  return {
-    categories,
-    topRatedWorkers,
-  };
-}
+    const heroimage =
+      "https://res.cloudinary.com/dgrj6cljo/image/upload/v1792676767/heroasset_gfnum7.png";
+
+    return {
+      heroimage,
+      categories,
+      topRatedWorkers,
+    };
+  }
 
 }
 module.exports = new workerService();
