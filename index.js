@@ -35,7 +35,6 @@ app.use("/api/workerseekers", workerSeekersRoutes);  //base route is /api/worker
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(process.env.MONGODB_URI);
     console.log(`Server is running on port: ${PORT}`);
   });
 }
