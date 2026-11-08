@@ -1,5 +1,7 @@
 const express = require("express");
 
+const verifyToken = require("../Middleware/authMiddleware");
+
 const jwt = require('jsonwebtoken');
 
 const workerController = require("../controller/workerController");
@@ -27,6 +29,22 @@ router.get("/getworker/:id", workerController.getWorkerById)
 router.get("/getworkersbycategory/:categoryId", workerController.getWorkersByCategory);
 
 router.get( "/home", workerController.getHomeData)
+
+router.get("/profile", verifyToken, async (req, res) => {
+  // req.userId identifies the authenticated user.
+  res.json({
+    message: "You are authenticated",
+    userId: req.userId,
+  });
+});
+
+router.get("/bookings", verifyToken, async (req, res) => {
+  // req.userId identifies the authenticated user.
+  res.json({
+    message: "You are authenticated",
+    userId: req.userId,
+  });
+});
 
 
 // router.get("/getworkerbyid/:id", workerController.getWorkerById)
