@@ -31,6 +31,7 @@ class AuthService {
                 id: user._id,
                 name: user.name,
                 phone: user.phone,
+                role: user.role,
             }
         }
     }
